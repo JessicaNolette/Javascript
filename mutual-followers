@@ -1,15 +1,13 @@
-// Write your code below
-let bobsFollowers = ['Joe', 'Marta', 'Sam', 'Erin'];
-let tinasFollowers = ['Sam', 'Marta', 'Elle'];
-let mutualFollowers = [];
+const bobsFollowers = ['Jessica', 'Kara', 'Lyra', 'Buttercup']
+const tinasFollowers = ['Jessica', 'Kara', 'Jax',]
+const mutualFollowers = []
 
-for (let i = 0; i < bobsFollowers.length; i++) {
+for (let i = 0; i < bobsFollowers.length; i++){
   for (let j = 0; j < tinasFollowers.length; j++) {
     if (bobsFollowers[i] === tinasFollowers[j]) {
-      mutualFollowers.push(bobsFollowers[i]);
+      mutualFollowers.push(bobsFollowers[i])
     }
   }
 };
 
-console.log(mutualFollowers
-)
+console.log(mutualFollowers)
