@@ -1,0 +1,37 @@
+// Change the input for a new whale talk phrase
+
+let input = "i love you";
+
+let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+let resulttArray = [];
+
+for (let inputIndex = 0; inputIndex < input.length; inputIndex++) {
+  //console.log('The inputIndex is ' + input[inputIndex]) 
+    for (let vowel = 0; vowel < vowels.length; vowel++) {
+      //console.log('The vowel is' + vowel);
+      if (input[inputIndex] === vowels[vowel]) {
+        if (input[inputIndex] === 'e'){
+          resulttArray.push('ee')
+        }
+        else if (input[inputIndex] === 'u') {
+          resulttArray.push('uu')
+        }
+        else{
+          resulttArray.push(input[inputIndex]);
+        }
+      }
+    }
+  }
+
+console.log(resulttArray.join("").toUpperCase())
+
+//output = IOEEOUU
+
+
+
+
+
+
+
+    
